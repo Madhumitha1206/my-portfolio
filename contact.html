@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="items">
+            <div class="name">
+                <p class="title">Madhumitha <span class="logo">Ravichandran</span></p>
+            </div>
+    <div class="links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="about.html">About</a></div>
+        <div class="link"><a href="skills.html">Skills</a></div>
+        <div class="link"><a href="services.html">Services</a></div>
+        <div class="link"><a href="education.html">Education</a></div>
+    </div>
+    </div>
+    </nav>
+    <p>For further query</p>
+        <a href="https://forms.gle/GfQtfuPXY8KkVsKV8">contact</a>
+        <hr>
+        <form action="https://httpbin.org/get" method="get">
+            <h2>Form</h2>
+            <fieldset>
+                <legend>Info</legend>
+                <p>
+                    <label for="firstname">First name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter firstname" autocomplete="on" required>
+                    <label for="lastname">Last name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter lastname" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="Password">Password :</label>
+                    <input type="text" name="Password" id="Password" placeholder="Password" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="phno">Phone_No:</label>
+                    <input type="tel" name="phno" id="phno" placeholder="Enter Phone_No" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="18" max="65" value="45" step="1">
+                </p>
+                <p>
+                    <label for="place">Enter your city:</label>
+                    <select name="place" id="place">
+                        <optgroup label="South">
+                            <option value="Chennai" selected>Chennai</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </optgroup>
+                        <optgroup label="North">
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </optgroup>
+                    </select>
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>Send me a note</legend>
+            <label for="message">Your message</label>
+            <p>
+                <textarea name="message" id="message">Type your text</textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
